@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: pink;
+    height: 65px;
+    width: 100vw;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+main{
+    height: 100px;
+    width: 100vw;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+footer{
+    background-color: pink;
+    height: 65px;
+    width: 100vw;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.nav-link{
+  color:pink;
+  size: 25px;
+  font-family: 'Balsamiq Sans';
+}

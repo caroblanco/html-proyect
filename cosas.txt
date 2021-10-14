@@ -1,0 +1,13 @@
+HTML
+<p> esto es un parrafo </p>
+
+
+
+
+
+
+-------------------------------------------
+CSS -> cambio colores, letra, tamanios, etc
+
+
+
