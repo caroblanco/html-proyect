@@ -166,6 +166,115 @@ h3{
     -webkit-transform: rotate(-45deg);
   }
 
+/*BOTON IDIOMA*/
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #F36F25;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #F36F25;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: #F36F25;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #F36F25;
+  -webkit-
+  
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
 
 /* FIN MAIN */
 
@@ -183,4 +292,279 @@ footer{
 
 .footer p{
     text-align: center;
+}
+
+/*BARRAS*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#boxx {
+    position: absolute;
+    top: 202px;
+    left: 37vw;
+    font-size: 78px;
+    color: white;
+}
+
+#scrollbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 100;
+    background: rgba(255, 255, 255,0.05);
+}
+ 
+#progressbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+  
+@keyframes ani{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    50%{
+      filter: hue-rotate(360deg);
+    }
+    100%{
+      filter: hue-rotate(0deg);
+    }
+}
+  
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff6347;
+}
+
+#cont1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 580px;
+
+}
+
+#cont2{
+    position: absolute;
+    top: 575px;
+    width: 100vw;
+    height: 300%;
+
+}
+
+.skillbox {
+    position: absolute;
+    top: 84vh;
+    width: 25%;
+    left: -6.5vh;
+    display: inline-block;
+}
+  
+  @media screen and (max-width: 651px){
+    .skillbox{
+      top: 415px;
+      width: 100%;
+      left: 0vw;
+    }
+  }
+  @media screen and (max-width: 396px){
+    .skillbox{
+      top: 415px;
+      width: 100%;
+    }
+  
+    }
+  
+#mysk{
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    color:	white;
+    font-size: 52px;
+    font-family: 'Sacramento', cursive;
+    letter-spacing: 1px;
+  }
+  
+
+  
+#skillhr {
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 72px;
+    width: 148px;
+    height: 0.7px;
+    border-width: 0;
+    color:white ;
+    background-color: white;
+    text-decoration: underline over;
+  }
+  
+  .skillbox p{
+    margin-left: 45px;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .container {
+    margin-left: 45px;
+    width: 80%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius:15px;
+    margin-bottom: 35px;
+  }
+  
+  
+#CBar {
+    width: 0%;
+    height: 5px; 
+    border-radius: 15px;
+    font-size: 4px;
+    background-color:#d342ff;
+    text-align: right;
+    color: #000000;
+    animation: animateskillbar1 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  
+  @keyframes animateskillbar1{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  @keyframes animateskillbar11{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+
+ 
+  #SQLBar{
+    width: 0%;
+    height: 5px; 
+    border-radius: 15px;
+    font-size: 4px;
+    background-color: #d342ff;
+    text-align: right;
+    color: #000000;
+    animation: animateskillbar2 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animateskillbar22{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  @keyframes animateskillbar2{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+  
+  #GHBar{
+    width: 0%;
+    height: 5px; 
+    border-radius: 15px;
+    font-size: 4px;
+    background-color: #d342ff;
+    text-align: right;
+    color: #000000;
+    animation: animateskillbar3 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+    }
+    @keyframes animateskillbar33{
+      0%{
+        width: 0%;
+      }
+      100%{
+        width: 65%;
+      }
+    }
+    @keyframes animateskillbar3{
+      0%{
+        width: 0%;
+      }
+      100%{
+        width: 0%;
+      }
+    }
+    
+
+  #HTMLBar{
+    width: 0%; 
+    height: 5px; 
+    border-radius: 15px;
+    font-size: 4px;
+    background-color: #d342ff;
+    text-align: right;
+    color: #000000;
+    animation: animateskillbar4 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animateskillbar44{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 30%;
+    }
+  }
+  @keyframes animateskillbar4{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+  
+.sk{
+    color: white;
+}
+  
+.sk:hover{
+    color: #949393;
 }

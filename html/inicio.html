@@ -12,23 +12,14 @@
         <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <!-- .ICO -->
     <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap');</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap"
-      rel="stylesheet"
-    >
-
-    <!-- PAGINAS ICONOS -->
-    <script
-      src="https://kit.fontawesome.com/d1f11e4bbc.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Material Icon CDN -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     >
 
@@ -51,16 +42,26 @@
 
       <header>
         <div class="botones">
-          <a  href= "inicioE.html" type="button" class="header-button">English</a>
+          <!--<center>
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on" onclick="toggleLanguage('English')">EN</span>
+                <span class="off" onclick="toggleLanguage('Spanish')">SP</span>
+              </div>
+           </center>
+          -->
+           <a type="button" class="header-button" onclick="toggleLanguage('Spanish')">Español</a>
+           <a type="button" class="header-button" onclick="toggleLanguage('English')">English</a>
         </div>
       </header>
         <main>
         <section class="portada">
             <section>
                 <div>
-                    <h2>Hola! Soy Carolina Blanco</h2>
+                    <h2 id="intro"> Hola! Soy Carolina Blanco</h2>
                     <fieldset>
-                    <p>Tengo 21 años y estoy en tercer año de la carrera Ingeniería en Sistemas de Información. Actualmente, en la búsqueda de oportunidades en el área de IT, esperando que las mismas me permitan fortalecer mis conocimientos respecto a las tecnologías actuales y dispuesta a aprender lo que se me requiera. </p>
+                    <p id="description">Tengo 21 años y estoy en tercer año de la carrera Ingeniería en Sistemas de Información. Actualmente, en la búsqueda de oportunidades en el área de IT, esperando que las mismas me permitan fortalecer mis conocimientos respecto a las tecnologías actuales y dispuesta a aprender lo que se me requiera. </p>
                   </fieldset>
                   </div>
             </section>
@@ -69,7 +70,7 @@
       <section class="principal">
         <section class="descripcionYFoto">
           
-          <div class="descripcion">
+          <div class="descripcion" id="formacionAc">
             <h2>FORMACION ACADEMICA</h2>
             <h3>UNIVERSIDAD TECNOLOGICA NACIONAL</h3>
             <p>INGENIERIA EN SISTEMAS DE INFORMACION
@@ -85,8 +86,8 @@
               2014 – 2018</p>
           </div>
           
-          <div class = "descripcion">
-            <h2>CERTIFICACIONES</h2>
+          <div class = "descripcion" >
+            <h2 id="certif">CERTIFICACIONES</h2>
             <h3>CERTIFICATE OF PROFICIENCY IN ENGLISH</h3>
             <p>&emsp;•	Cambridge, 2019</p>
             <br>
@@ -106,31 +107,69 @@
         <br>
         <section class="descripcionYFoto">
           <div class="descripcion">
+            <!--
           <h2>TECNOLOGIAS</h2>
-          <p>BARRAS DE NIVEL!!!</p>
-          <p>Manejo de los lenguajes C y C++ intermedio
-            <br>
-          Manejo de los lenguajes SQL, Java y HTML básico
-          <br>
-          Manejo de GitHub intermedio
-        </p>
+          <div id="scrollbar"></div>
+          <div id="progressbar"></div>
+      
+          <div id="cont1">
+              <div id="boxx">CodeXpool</div>
+          </div>
+      
+          <div id="cont2">
+              <div class="skillbox">
+                  <p class="sk">C - C++</p>
+                  <div class="container" data-aos="fade-right">
+                      <div class="Cbar bars" id="CBar">65%</div>
+                      <div class="progress-line1 C">
+                          <span></span>
+                      </div>
+                  </div>
+
+                  <p class="sk">SQL - TSQL - JAVA</p>
+                  <div class="container" data-aos="fade-right">
+                      <div class="SQLbar bars" id="SQLBar">80%
+                      </div>
+                      <div class="progress-line2 SQL">
+                          <span></span>
+                      </div>
+                  </div>
+  
+                  <p class="sk">GITHUB</p>
+                  <div class="container" data-aos="fade-right">
+                      <div class="GHbar bars" id="GHBar">65%</div>
+                      <div class="progress-line3 GH">
+                          <span></span>
+                      </div>
+                  </div>
+      
+                  <p class="sk">HTML - CSS - JAVASCRIPT</p>
+                  <div class="container" data-aos="fade-right">
+                      <div class="HTMLbar bars" id="HTMLBar">60%</div>
+                      <div class="progress-line4 HTML">
+                          <span></span>
+                      </div>
+                  </div>
+                  </div>
+          </div>
+
           
         </div>
-
-        <div class="descripcion">
+-->
+        <div class="descripcion" id="lang">
           <h2>IDIOMAS</h2>
-          <p>
-          Nivel de Español nativo
+          <p> 
+          Nivel de Español: NATIVO
           <br>
-          Nivel de Inglés avanzado / bilingue
+          Nivel de Inglés: AVANZADO / BILINGUE
           <br>
-          Nivel de Alemán y Portugués básico
+          Nivel de Alemán y Portugués: BASICO
         </p>
           
         </div>
 
         <div class="descripcion" >
-          <h3>CUALIDADES</h3>
+          <h2>CUALIDADES</h2>
           <p>
             <i class="arrow right"></i> Responsabilidad
           <br>
@@ -148,25 +187,15 @@
 
         </section>
       </section>
+    
     </main>
 
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
-        
-
      <footer>
-       <div class = "descripcion">
-       <p>CONTACTO
-         <br>
-          Palermo, CABA, Bs As, Argentina
-          <br>
-          carolina.blancos@gmail.com 
-          <br>
-        https://www.linkedin.com/in/carolina-blanco-/ 
-        </p>
-      </div>
+      
      </footer>   
-    
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script type="text/javascript" src="../jscript/tecnologias.js"></script>
+     <script type="text/javascript" src="../jscript/idiomas.js"></script>
     </body>
 
 </html>
