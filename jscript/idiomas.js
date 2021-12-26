@@ -11,7 +11,7 @@ function toggleLanguage(language) {
       formacionAc.innerHTML ="<h2>FORMACION ACADEMICA</h2><h3>UNIVERSIDAD TECNOLOGICA NACIONAL</h3><p>INGENIERIA EN SISTEMAS DE INFORMACION<br>2019 – En curso<br>Estudiante de Ingenieria en Sistemas de Información, actualmente cursando tercer año.</p><br><br><h3>COLEGIO LANGE LEY</h3><p>TITULO BACHILLER EN RELACIONES INTERNACIONALES<br>2014 – 2018</p>";
       certif.innerHTML = "CERTIFICACIONES";
       lang.innerHTML ="<h2>IDIOMAS</h2><p> Nivel de Español: NATIVO<br>Nivel de Inglés: AVANZADO / BILINGUE<br>Nivel de Alemán y Portugués: BASICO</p>";
-      //cuali.innerHTML="<h2>CUALIDADES</h2> <p><i class="arrow right"></i> Responsabilidad<br><i class="arrow right"></i> Dirección y liderazgo<br><i class="arrow right"></i> Trabajo en equipo<br><i class="arrow right"></i> Capacidad de adaptación<br><i class="arrow right"></i> Resolución de problemas<br><i class="arrow right"></i> Dedicación</p>";
+      cuali.innerHTML="<h2>CUALIDADES</h2> <p><i class="arrow right"></i> Responsabilidad<br><i class="arrow right"></i> Dirección y liderazgo<br><i class="arrow right"></i> Trabajo en equipo<br><i class="arrow right"></i> Capacidad de adaptación<br><i class="arrow right"></i> Resolución de problemas<br><i class="arrow right"></i> Dedicación</p>";
     }
     else {
       intro.innerHTML = "Hi! I am Carolina Blanco";
@@ -19,5 +19,6 @@ function toggleLanguage(language) {
       formacionAc.innerHTML = "<h2>EDUCATION</h2><h3>UNIVERSIDAD TECNOLOGICA NACIONAL</h3><p>INGENIERIA EN SISTEMAS DE INFORMACION<br>2019 – In progress<br>Systems engineering student, currently in third year.</p><br><br><h3>COLEGIO LANGE LEY</h3><p>TITULO BACHILLER EN RELACIONES INTERNACIONALES<br>2014 – 2018</p>";
       certif.innerHTML = "CERTIFICATIONS";
       lang.innerHTML = "<h2>LANGUAGES</h2><p>Spanish level: NATIVE<br>English level: ADVANCED / BILINGUAL<br>German and Portuguese levels: BASIC</p>";
+      cuali.innerHTML="<h3>ATRIBUTES</h3><p><i class="arrow right"></i> Responsibility<br><i class="arrow right"></i> Leadership <br><i class="arrow right"></i> Teamwork <br><i class="arrow right"></i> Able to adapt<br><i class="arrow right"></i> Problem solving<br><i class="arrow right"></i> Dedication</p>";
     }
   }
