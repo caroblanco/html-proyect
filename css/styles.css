@@ -365,7 +365,7 @@ body::-webkit-scrollbar {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff6347;
+    background: white;
 }
 
 #cont1{
@@ -567,4 +567,5 @@ body::-webkit-scrollbar {
   
 .sk:hover{
     color: #949393;
+    cursor:default;
 }
