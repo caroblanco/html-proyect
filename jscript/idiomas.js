@@ -22,3 +22,5 @@ function toggleLanguage(language) {
       cuali.innerHTML="<h2>ATRIBUTES</h2><p><i class=\"arrow right\"></i> Responsibility<br><i class=\"arrow right\"></i> Leadership <br><i class=\"arrow right\"></i> Teamwork <br><i class=\"arrow right\"></i> Able to adapt<br><i class=\"arrow right\"></i> Problem solving<br><i class=\"arrow right\"></i> Dedication</p>";
     }
   }
+
+  toggleLanguage("Spanish");
