@@ -30,7 +30,7 @@ let weather = {
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
-      "Wind speed: " + speed * 3.6 + " km/h";
+      "Wind speed: " + Math.ceil(speed * 3.6) + " km/h";
     document.querySelector(".quote").innerText =
       "Caro's thoughts: " + this.getQuote(temp);
     document.querySelector(".weather").classList.remove("loading");
