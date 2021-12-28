@@ -46,7 +46,7 @@ let weather = {
     else if (temp > 20) return "Se pueden comer pastas";
     else if (temp > 10) return "Ta chill";
     else if (temp > 0) return "Ta fresco pa chomba";
-    else return "XD";
+    else return "I smell snow!";
   },
 };
 

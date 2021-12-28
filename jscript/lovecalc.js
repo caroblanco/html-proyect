@@ -1,4 +1,4 @@
-
+//https://rapidapi.com/ajith/api/love-calculator/
 let lovecalc = {
     apiKey: "b531cf6c6bmsh531a570b8c214fdp121490jsn4860dfe93d61",
   
